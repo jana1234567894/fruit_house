@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu | Fruit House — Superfood Bowls, Juices & More in Trichy</title>
+    <meta name="description"
+        content="Explore the full menu at Fruit House Trichy — superfood bowls, special combos, coolers, nut milk, sandwiches, tea & more. Order on WhatsApp!" />
+    <meta name="keywords"
+        content="Fruit House menu, superfood bowls Trichy, fresh juice menu Trichy, healthy bowls menu, best juice bar Trichy menu" />
+    <link rel="canonical" href="https://fruithousentrichy.com/menu.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Menu | Fruit House Trichy" />
+    <meta property="og:description"
+        content="Superfood bowls, fresh juices, coolers, sandwiches & more. View our full menu and order on WhatsApp!" />
+    <meta property="og:image" content="/images/hero/hero1.png" />
+    <meta property="og:url" content="https://fruithousentrichy.com/menu.html" />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <link rel="stylesheet" href="/src/styles/main.css" />
+
+    <script type="module" src="/src/menu.ts"></script>
+
+    <!-- JSON-LD: BreadcrumbList -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fruithousentrichy.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Menu", "item": "https://fruithousentrichy.com/menu.html" }
+    ]
+  }
+  </script>
+
+    <!-- JSON-LD: Menu -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Menu",
+    "name": "Fruit House Menu",
+    "description": "Premium fresh juices, superfood bowls, coolers, sandwiches and more in Trichy",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Special Combos",
+        "hasMenuItem": [
+          {"@type": "MenuItem", "name": "Energy Boost", "offers": {"@type": "Offer", "price": "40", "priceCurrency": "INR"}},
+          {"@type": "MenuItem", "name": "Tropical Bliss", "offers": {"@type": "Offer", "price": "40", "priceCurrency": "INR"}},
+          {"@type": "MenuItem", "name": "Choco Crunch", "offers": {"@type": "Offer", "price": "40", "priceCurrency": "INR"}},
+          {"@type": "MenuItem", "name": "Berry Power", "offers": {"@type": "Offer", "price": "40", "priceCurrency": "INR"}}
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Super Food Bowls",
+        "hasMenuItem": [
+          {"@type": "MenuItem", "name": "Protein Power House", "offers": {"@type": "Offer", "price": "240", "priceCurrency": "INR"}},
+          {"@type": "MenuItem", "name": "Mango Paradise", "offers": {"@type": "Offer", "price": "200", "priceCurrency": "INR"}},
+          {"@type": "MenuItem", "name": "Choco Love", "offers": {"@type": "Offer", "price": "200", "priceCurrency": "INR"}},
+          {"@type": "MenuItem", "name": "The Hulk", "offers": {"@type": "Offer", "price": "220", "priceCurrency": "INR"}},
+          {"@type": "MenuItem", "name": "Acai Signature Bowl", "offers": {"@type": "Offer", "price": "240", "priceCurrency": "INR"}},
+          {"@type": "MenuItem", "name": "Ocean Zen", "offers": {"@type": "Offer", "price": "240", "priceCurrency": "INR"}},
+          {"@type": "MenuItem", "name": "The Jade", "offers": {"@type": "Offer", "price": "220", "priceCurrency": "INR"}},
+          {"@type": "MenuItem", "name": "Blue Hawaiian Vanilla", "offers": {"@type": "Offer", "price": "240", "priceCurrency": "INR"}},
+          {"@type": "MenuItem", "name": "Pina Colada", "offers": {"@type": "Offer", "price": "200", "priceCurrency": "INR"}},
+          {"@type": "MenuItem", "name": "Tropical Bliss Bowl", "offers": {"@type": "Offer", "price": "240", "priceCurrency": "INR"}}
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Coolers",
+        "hasMenuItem": [
+          {"@type": "MenuItem", "name": "Tender Coconut Cooler", "offers": {"@type": "Offer", "price": "100", "priceCurrency": "INR"}},
+          {"@type": "MenuItem", "name": "Mint Lemonade", "offers": {"@type": "Offer", "price": "70", "priceCurrency": "INR"}},
+          {"@type": "MenuItem", "name": "Mango Lemonade", "offers": {"@type": "Offer", "price": "120", "priceCurrency": "INR"}},
+          {"@type": "MenuItem", "name": "Strawberry Lemonade", "offers": {"@type": "Offer", "price": "120", "priceCurrency": "INR"}}
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/91XXXXXXXXXX?text=Hi%20Fruit%20House!%20I%20would%20like%20to%20place%20an%20order%20🍹"
+        target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+    </a>
+
+    <!-- ═══════════ NAVBAR ═══════════ -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-logo">
+                <img src="/images/logo.png" alt="Fruit House Logo" width="44" height="44" />
+                <span>Fruit House</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+                <a href="https://wa.me/91XXXXXXXXXX?text=Hi%20Fruit%20House!%20I%20would%20like%20to%20place%20an%20order%20🍹"
+                    target="_blank" class="nav-order-btn">Order Now</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ═══════════ PAGE HERO ═══════════ -->
+    <section class="page-hero">
+        <span class="floating-fruit" style="top:20%;left:5%;">🍊</span>
+        <span class="floating-fruit" style="top:30%;right:10%;">🥝</span>
+        <div class="container">
+            <p class="breadcrumb reveal"><a href="index.html">Home</a> / Menu</p>
+            <h1 class="reveal">Our Menu</h1>
+            <p class="reveal">Handcrafted with 100% fresh fruits & premium ingredients</p>
+        </div>
+    </section>
+
+    <!-- ═══════════ MENU ═══════════ -->
+    <section class="section" id="menu">
+        <div class="container">
+
+            <!-- Category Tabs -->
+            <div class="category-tabs reveal">
+                <button class="category-tab active" data-category="all">🍽️ All</button>
+                <button class="category-tab" data-category="combos">🍹 Special Combos</button>
+                <button class="category-tab" data-category="bowls">🥣 Superfood Bowls</button>
+                <button class="category-tab" data-category="veggies">🥗 Veggies</button>
+                <button class="category-tab" data-category="sandwich">🥪 Sandwich</button>
+                <button class="category-tab" data-category="coolers">🧊 Coolers</button>
+                <button class="category-tab" data-category="tea">🍵 Tea</button>
+                <button class="category-tab" data-category="nutmilk">🥛 Nut Milk</button>
+            </div>
+
+            <div class="products-grid stagger">
+
+                <!-- ── SPECIAL COMBOS ── -->
+                <div class="product-group active" data-category="combos">
+                    <div class="product-card reveal-scale">
+                        <div class="product-card-img">
+                            <img src="/images/menu/SPECIAL COMBOS/Energy Boost.png"
+                                alt="Energy Boost juice combo - Best fresh juice in Trichy" loading="lazy" />
+                        </div>
+                        <div class="product-card-body">
+                            <h4>Energy Boost</h4>
+                            <p class="product-desc">A power-packed fresh juice combo to kickstart your day with natural
+                                energy.</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <span class="product-price">₹40</span>
+                            <button class="product-order-btn" data-order="Energy Boost (₹40)">💬 Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-group active" data-category="combos">
+                    <div class="product-card reveal-scale">
+                        <div class="product-card-img">
+                            <img src="/images/menu/SPECIAL COMBOS/Tropical Bliss.png"
+                                alt="Tropical Bliss juice combo at Fruit House Trichy" loading="lazy" />
+                        </div>
+                        <div class="product-card-body">
+                            <h4>Tropical Bliss</h4>
+                            <p class="product-desc">A tropical burst of fresh mango, pineapple, and exotic fruit
+                                flavors.</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <span class="product-price">₹40</span>
+                            <button class="product-order-btn" data-order="Tropical Bliss (₹40)">💬 Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-group active" data-category="combos">
+                    <div class="product-card reveal-scale">
+                        <div class="product-card-img">
+                            <img src="/images/menu/SPECIAL COMBOS/Choco Crunch.png"
+                                alt="Choco Crunch combo - Chocolate fruit juice Trichy" loading="lazy" />
+                        </div>
+                        <div class="product-card-body">
+                            <h4>Choco Crunch</h4>
+                            <p class="product-desc">Rich chocolate blended with crunchy goodness and fresh fruit
+                                flavors.</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <span class="product-price">₹40</span>
+                            <button class="product-order-btn" data-order="Choco Crunch (₹40)">💬 Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-group active" data-category="combos">
+                    <div class="product-card reveal-scale">
+                        <div class="product-card-img">
+                            <img src="/images/menu/SPECIAL COMBOS/Berry Power.png"
+                                alt="Berry Power juice combo - Fresh berry juice in Trichy" loading="lazy" />
+                        </div>
+                        <div class="product-card-body">
+                            <h4>Berry Power</h4>
+                            <p class="product-desc">Packed with antioxidant-rich berries for a delicious and healthy
+                                boost.</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <span class="product-price">₹40</span>
+                            <button class="product-order-btn" data-order="Berry Power (₹40)">💬 Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── SUPER FOOD BOWLS ── -->
+                <div class="product-group active" data-category="bowls">
+                    <div class="product-card reveal-scale">
+                        <div class="product-card-img">
+                            <img src="/images/menu/SUPER FOOD BOWLS/Protein Power House.png"
+                                alt="Protein Power House superfood bowl - Best healthy bowl in Trichy" loading="lazy" />
+                        </div>
+                        <div class="product-card-body">
+                            <h4>Protein Power House</h4>
+                            <p class="product-desc">Loaded with protein-rich superfoods, fresh fruits, and crunchy
+                                toppings.</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <span class="product-price">₹240</span>
+                            <button class="product-order-btn" data-order="Protein Power House (₹240)">💬 Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-group active" data-category="bowls">
+                    <div class="product-card reveal-scale">
+                        <div class="product-card-img">
+                            <img src="/images/menu/SUPER FOOD BOWLS/Mango Paradise.png"
+                                alt="Mango Paradise superfood bowl at Fruit House Trichy" loading="lazy" />
+                        </div>
+                        <div class="product-card-body">
+                            <h4>Mango Paradise</h4>
+                            <p class="product-desc">Creamy mango bliss topped with fresh fruits and granola crunch.</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <span class="product-price">₹200</span>
+                            <button class="product-order-btn" data-order="Mango Paradise (₹200)">💬 Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-group active" data-category="bowls">
+                    <div class="product-card reveal-scale">
+                        <div class="product-card-img">
+                            <img src="/images/menu/SUPER FOOD BOWLS/Choco Love.png"
+                                alt="Choco Love superfood bowl - Chocolate smoothie bowl Trichy" loading="lazy" />
+                        </div>
+                        <div class="product-card-body">
+                            <h4>Choco Love</h4>
+                            <p class="product-desc">Indulgent chocolate smoothie bowl with premium cacao and fresh
+                                toppings.</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <span class="product-price">₹200</span>
+                            <button class="product-order-btn" data-order="Choco Love (₹200)">💬 Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-group active" data-category="bowls">
+                    <div class="product-card reveal-scale">
+                        <div class="product-card-img">
+                            <img src="/images/menu/SUPER FOOD BOWLS/The Hulk.png"
+                                alt="The Hulk green superfood bowl - Healthy green bowl in Trichy" loading="lazy" />
+                        </div>
+                        <div class="product-card-body">
+                            <h4>The Hulk</h4>
+                            <p class="product-desc">Green powerhouse packed with spinach, avocado, and superfood
+                                nutrients.</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <span class="product-price">₹220</span>
+                            <button class="product-order-btn" data-order="The Hulk (₹220)">💬 Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-group active" data-category="bowls">
+                    <div class="product-card reveal-scale">
+                        <div class="product-card-img">
+                            <img src="/images/menu/SUPER FOOD BOWLS/Acai Signature Bowl.png"
+                                alt="Acai Signature Bowl - Best acai bowl in Trichy at Fruit House" loading="lazy" />
+                        </div>
+                        <div class="product-card-body">
+                            <h4>Acai Signature Bowl</h4>
+                            <p class="product-desc">Our signature acai bowl with premium toppings and fresh fruit
+                                garnish.</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <span class="product-price">₹240</span>
+                            <button class="product-order-btn" data-order="Acai Signature Bowl (₹240)">💬 Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-group active" data-category="bowls">
+                    <div class="product-card reveal-scale">
+                        <div class="product-card-img">
+                            <img src="/images/menu/SUPER FOOD BOWLS/Ocean Zen.png"
+                                alt="Ocean Zen blue spirulina bowl at Fruit House Trichy" loading="lazy" />
+                        </div>
+                        <div class="product-card-body">
+                            <h4>Ocean Zen</h4>
+                            <p class="product-desc">Blue spirulina superfood bowl — calming, colorful, and packed with
+                                nutrients.</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <span class="product-price">₹240</span>
+                            <button class="product-order-btn" data-order="Ocean Zen (₹240)">💬 Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-group active" data-category="bowls">
+                    <div class="product-card reveal-scale">
+                        <div class="product-card-img">
+                            <img src="/images/menu/SUPER FOOD BOWLS/The Jade.png"
+                                alt="The Jade matcha superfood bowl - Premium bowl in Trichy" loading="lazy" />
+                        </div>
+                        <div class="product-card-body">
+                            <h4>The Jade</h4>
+                            <p class="product-desc">Matcha-infused superfood bowl with a vibrant jade green base and
+                                fresh fruits.</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <span class="product-price">₹220</span>
+                            <button class="product-order-btn" data-order="The Jade (₹220)">💬 Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-group active" data-category="bowls">
+                    <div class="product-card reveal-scale">
+                        <div class="product-card-img">
+                            <img src="/images/menu/SUPER FOOD BOWLS/Blue Hawaiian Vanilla.png"
+                                alt="Blue Hawaiian Vanilla smoothie bowl at Fruit House Trichy" loading="lazy" />
+                        </div>
+                        <div class="product-card-body">
+                            <h4>Blue Hawaiian Vanilla</h4>
+                            <p class="product-desc">Tropical blue spirulina meets vanilla cream — a stunning, delicious
+                                bowl.</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <span class="product-price">₹240</span>
+                            <button class="product-order-btn" data-order="Blue Hawaiian Vanilla (₹240)">💬
+                                Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-group active" data-category="bowls">
+                    <div class="product-card reveal-scale">
+                        <div class="product-card-img">
+                            <img src="/images/menu/SUPER FOOD BOWLS/Pina Colada.png"
+                                alt="Pina Colada bowl - Tropical coconut pineapple bowl in Trichy" loading="lazy" />
+                        </div>
+                        <div class="product-card-body">
+                            <h4>Pina Colada</h4>
+                            <p class="product-desc">Coconut and pineapple tropical paradise in a beautiful superfood
+                                bowl.</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <span class="product-price">₹200</span>
+                            <button class="product-order-btn" data-order="Pina Colada (₹200)">💬 Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-group active" data-category="bowls">
+                    <div class="product-card reveal-scale">
+                        <div class="product-card-img">
+                            <img src="/images/menu/SUPER FOOD BOWLS/Tropical Bliss Bowl.png"
+                                alt="Tropical Bliss superfood bowl - Exotic fruit bowl Trichy" loading="lazy" />
+                        </div>
+                        <div class="product-card-body">
+                            <h4>Tropical Bliss Bowl</h4>
+                            <p class="product-desc">An exotic blend of tropical fruits in a visually stunning superfood
+                                bowl.</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <span class="product-price">₹240</span>
+                            <button class="product-order-btn" data-order="Tropical Bliss Bowl (₹240)">💬 Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── VEGGIES ── -->
+                <div class="product-group active" data-category="veggies">
+                    <div class="product-card reveal-scale">
+                        <div class="product-card-img">
+                            <img src="/images/menu/VEGGIES/Avocado Corn Salsa.png"
+                                alt="Avocado Corn Salsa - Healthy veggie salad at Fruit House Trichy" loading="lazy" />
+                        </div>
+                        <div class="product-card-body">
+                            <h4>Avocado Corn Salsa</h4>
+                            <p class="product-desc">Creamy avocado with sweet corn salsa — a perfect healthy veggie
+                                bowl.</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <span class="product-price">₹200</span>
+                            <button class="product-order-btn" data-order="Avocado Corn Salsa (₹200)">💬 Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-group active" data-category="veggies">
+                    <div class="product-card reveal-scale">
+                        <div class="product-card-img">
+                            <img src="/images/menu/VEGGIES/Blueberry Mango Salad.png"
+                                alt="Blueberry Mango Salad - Fresh fruit salad in Trichy" loading="lazy" />
+                        </div>
+                        <div class="product-card-body">
+                            <h4>Blueberry Mango Salad</h4>
+                            <p class="product-desc">Fresh blueberries and ripe mango in a vibrant, antioxidant-rich
+                                salad.</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <span class="product-price">₹240</span>
+                            <button class="product-order-btn" data-order="Blueberry Mango Salad (₹240)">💬
+                                Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── SANDWICH ── -->
+                <div class="product-group active" data-category="sandwich">
+                    <div class="product-card reveal-scale">
+                        <div class="product-card-img">
+                            <img src="/images/menu/SANDWICH/Avocado Sandwich.png"
+                                alt="Avocado Sandwich - Healthy premium sandwich at Fruit House Trichy"
+                                loading="lazy" />
+                        </div>
+                        <div class="product-card-body">
+                            <h4>Avocado Sandwich</h4>
+                            <p class="product-desc">Fresh avocado on artisan bread with premium fillings and greens.</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <span class="product-price">₹140</span>
+                            <button class="product-order-btn" data-order="Avocado Sandwich (₹140)">💬 Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-group active" data-category="sandwich">
+                    <div class="product-card reveal-scale">
+                        <div class="product-card-img">
+                            <img src="/images/menu/SANDWICH/Paneer Sandwich.png"
+                                alt="Paneer Sandwich with cheese - Premium paneer sandwich in Trichy" loading="lazy" />
+                        </div>
+                        <div class="product-card-body">
+                            <h4>Paneer Sandwich</h4>
+                            <p class="product-desc">Spiced paneer with fresh veggies. Add cheese slice for ₹20.</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <span class="product-price">₹140</span>
+                            <button class="product-order-btn" data-order="Paneer Sandwich (₹140)">💬 Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── COOLERS ── -->
+                <div class="product-group active" data-category="coolers">
+                    <div class="product-card reveal-scale">
+                        <div class="product-card-img">
+                            <img src="/images/menu/COOLERS/Tender Coconut Cooler.png"
+                                alt="Tender Coconut Cooler - Refreshing coconut drink in Trichy" loading="lazy" />
+                        </div>
+                        <div class="product-card-body">
+                            <h4>Tender Coconut Cooler</h4>
+                            <p class="product-desc">Fresh tender coconut water blended into a refreshing tropical
+                                cooler.</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <span class="product-price">₹100</span>
+                            <button class="product-order-btn" data-order="Tender Coconut Cooler (₹100)">💬
+                                Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-group active" data-category="coolers">
+                    <div class="product-card reveal-scale">
+                        <div class="product-card-img">
+                            <img src="/images/menu/COOLERS/Mint Lemonade.png"
+                                alt="Mint Lemonade - Fresh mint lemon cooler at Fruit House Trichy" loading="lazy" />
+                        </div>
+                        <div class="product-card-body">
+                            <h4>Mint Lemonade</h4>
+                            <p class="product-desc">Classic mint lemonade made with fresh lemons and garden-fresh mint.
+                            </p>
+                        </div>
+                        <div class="product-card-footer">
+                            <span class="product-price">₹70</span>
+                            <button class="product-order-btn" data-order="Mint Lemonade (₹70)">💬 Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-group active" data-category="coolers">
+                    <div class="product-card reveal-scale">
+                        <div class="product-card-img">
+                            <img src="/images/menu/COOLERS/Mango Lemonade.png"
+                                alt="Mango Lemonade cooler - Mango lemon juice in Trichy" loading="lazy" />
+                        </div>
+                        <div class="product-card-body">
+                            <h4>Mango Lemonade</h4>
+                            <p class="product-desc">Sweet mango meets tangy lemon in this perfect summer refresher.</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <span class="product-price">₹120</span>
+                            <button class="product-order-btn" data-order="Mango Lemonade (₹120)">💬 Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-group active" data-category="coolers">
+                    <div class="product-card reveal-scale">
+                        <div class="product-card-img">
+                            <img src="/images/menu/COOLERS/Strawberry Lemonade.png"
+                                alt="Strawberry Lemonade - Fresh strawberry cooler at Fruit House" loading="lazy" />
+                        </div>
+                        <div class="product-card-body">
+                            <h4>Strawberry Lemonade</h4>
+                            <p class="product-desc">Fresh strawberries blended with lemon for a vibrant, refreshing
+                                cooler.</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <span class="product-price">₹120</span>
+                            <button class="product-order-btn" data-order="Strawberry Lemonade (₹120)">💬 Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── TEA ── -->
+                <div class="product-group active" data-category="tea">
+                    <div class="product-card reveal-scale">
+                        <div class="product-card-img">
+                            <img src="/images/menu/TEA/Chamomile Green Tea.png"
+                                alt="Chamomile Green Tea - Premium herbal tea at Fruit House Trichy" loading="lazy" />
+                        </div>
+                        <div class="product-card-body">
+                            <h4>Chamomile Green Tea</h4>
+                            <p class="product-desc">Soothing chamomile blended with premium green tea for calm and
+                                wellness.</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <span class="product-price">₹50</span>
+                            <button class="product-order-btn" data-order="Chamomile Green Tea (₹50)">💬 Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-group active" data-category="tea">
+                    <div class="product-card reveal-scale">
+                        <div class="product-card-img">
+                            <img src="/images/menu/TEA/Butterfly Pea Tea.png"
+                                alt="Butterfly Pea Tea - Beautiful blue herbal tea in Trichy" loading="lazy" />
+                        </div>
+                        <div class="product-card-body">
+                            <h4>Butterfly Pea Tea</h4>
+                            <p class="product-desc">Stunning blue butterfly pea flower tea — natural, vibrant, and
+                                calming.</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <span class="product-price">₹50</span>
+                            <button class="product-order-btn" data-order="Butterfly Pea Tea (₹50)">💬 Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── NUT MILK ── -->
+                <div class="product-group active" data-category="nutmilk">
+                    <div class="product-card reveal-scale">
+                        <div class="product-card-img">
+                            <img src="/images/menu/NUT MILK/Almond Chocolate Milk.png"
+                                alt="Almond Chocolate Milk - Premium nut milk at Fruit House Trichy" loading="lazy" />
+                        </div>
+                        <div class="product-card-body">
+                            <h4>Almond Chocolate Milk</h4>
+                            <p class="product-desc">Rich almond milk blended with premium chocolate — dairy-free
+                                indulgence.</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <span class="product-price">₹200</span>
+                            <button class="product-order-btn" data-order="Almond Chocolate Milk (₹200)">💬
+                                Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-group active" data-category="nutmilk">
+                    <div class="product-card reveal-scale">
+                        <div class="product-card-img">
+                            <img src="/images/menu/NUT MILK/Cashew Caramel Milk.png"
+                                alt="Cashew Caramel Milk - Caramel nut milk in Trichy" loading="lazy" />
+                        </div>
+                        <div class="product-card-body">
+                            <h4>Cashew Caramel Milk</h4>
+                            <p class="product-desc">Smooth cashew milk with silky caramel — a luxurious dairy-free
+                                treat.</p>
+                        </div>
+                        <div class="product-card-footer">
+                            <span class="product-price">₹200</span>
+                            <button class="product-order-btn" data-order="Cashew Caramel Milk (₹200)">💬 Order</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /products-grid -->
+        </div>
+    </section>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="/images/logo.png" alt="Fruit House Logo" width="40" height="40" />
+                        <span>Fruit House</span>
+                    </div>
+                    <p>Premium fresh juice shop in Trichy, Tamil Nadu. Crafting the finest superfood bowls, smoothies,
+                        and healthy drinks with 100% real fruit toppings.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="menu.html">Menu</a>
+                        <a href="about.html">About</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Categories</h4>
+                    <div class="footer-links">
+                        <a href="menu.html">Special Combos</a>
+                        <a href="menu.html">Superfood Bowls</a>
+                        <a href="menu.html">Coolers</a>
+                        <a href="menu.html">Sandwiches</a>
+                        <a href="menu.html">Nut Milk</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Contact Us</h4>
+                    <div class="footer-links">
+                        <a href="contact.html">📍 Trichy, Tamil Nadu</a>
+                        <a href="tel:+91XXXXXXXXXX">📞 +91 XXXXXXXXXX</a>
+                        <a href="https://wa.me/91XXXXXXXXXX" target="_blank">💬 WhatsApp</a>
+                        <a href="contact.html">🕘 9:00 AM – 10:00 PM</a>
+                    </div>
+                    <div class="footer-social" style="margin-top: var(--space-md);">
+                        <a href="#" aria-label="Instagram">📸</a>
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="YouTube">▶️</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Fruit House, Trichy. All rights reserved.</p>
+                <p class="footer-seo-text">Best premium juice shop in Trichy serving fresh fruit juices, superfood
+                    bowls, healthy smoothie bowls, organic nut milk, refreshing coolers, and more. Order online via
+                    WhatsApp.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
