@@ -5,7 +5,7 @@
 import './styles/main.css';
 
 // ── WhatsApp Number ──────────────────────────────────────────
-const WHATSAPP_NUMBER = '91XXXXXXXXXX';
+const WHATSAPP_NUMBER = '917598465053';
 
 // ── Navbar ───────────────────────────────────────────────────
 function initNavbar(): void {
