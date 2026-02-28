@@ -5,7 +5,7 @@
 import './styles/main.css';
 
 // ── WhatsApp Number ──────────────────────────────────────────
-const WHATSAPP_NUMBER = '917598465053';
+const WHATSAPP_NUMBER = '917867998656';
 
 // ── Navbar ───────────────────────────────────────────────────
 function initNavbar(): void {
@@ -140,7 +140,7 @@ function initWhatsAppOrder(): void {
         btn.addEventListener('click', () => {
             const productName = btn.dataset.order || 'a product';
             const message = encodeURIComponent(
-                `Hi! I would like to order ${productName} from Fruit House Trichy 🍹`
+                `Hi! I would like to order ${productName} from Fruit House Trichy`
             );
             const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
             window.open(url, '_blank');
